@@ -1,0 +1,155 @@
+.container {
+    background-color: #d3d3d3;
+    padding: 20px;
+    padding-top: 40px;
+    border-radius: 10px;
+    width: 550px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Changed to blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 96%; /* Adjusted to 100% to match the form group width */
+}
+
+.submit-btn:hover {
+    background-color: #0069d9; /* Darker blue on hover */
+}
+
+.topnav {
+    width: 100%;
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-top: 60px; /* Ensure it's below the navbar */
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.add-hotel-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-hotel-btn:hover {
+    background-color: #45a049;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.date-picker,
+.confirm-btn,
+.view-map-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.date-picker:hover,
+.confirm-btn:hover,
+.view-map-btn:hover {
+    background-color: #45a049;
+}
+
+.form-group select,
+.form-group input[type="text"],
+.form-group input[type="date"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group select:focus,
+.form-group input[type="text"]:focus,
+.form-group input[type="date"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding-top: 100px; /* Adjust this value based on the height of your navbar */
+    }
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Ensure footer stays at the bottom */
+}

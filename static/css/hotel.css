@@ -1,0 +1,156 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+    position: relative; /* Ensure proper stacking context */
+}
+
+/* Background Video */
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover; /* Ensure the video covers the entire background without stretching */
+}
+
+.topnav {
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.8); /* Adjust transparency as needed */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.nav-lock-link, .topnav a.nav-hotel-link {
+    float: right;
+    padding: 14px 20px;
+}
+
+.topnav a i {
+    font-size: 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-top: 60px; /* Ensure it's below the navbar */
+}
+
+.container {
+    background-color: #d3d3d3;
+    padding: 40px;
+    padding-top: 60px; /* Adjust this value based on the height of your navbar */
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus {
+    border-color: #1a75ff;
+    outline: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px; /* Ensure padding matches input fields */
+    background-color: #1a75ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #1a75ff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding-top: 80px; /* Adjust this value based on the height of your navbar */
+    }
+}
+
+.alert {
+    height: 50px; /* Adjust this value to change the height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em; /* Adjust font size if needed */
+    font-weight: bold;
+    text-align: center;
+    padding: 0 15px; /* Adjust padding if needed */
+    margin-bottom: 20px; /* Add some space below the alert */
+    margin-top: 10px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}

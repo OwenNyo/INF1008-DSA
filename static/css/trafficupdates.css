@@ -1,0 +1,114 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.container {
+    background-color: #d3d3d3;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: auto; /* Center the container */
+    margin-top: 60px; /* Ensure it's below the navbar */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.content {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    /*background-color: #f5f5f5; /* Footer background color */
+    padding: 10px;
+    margin-top: auto; /* Ensure footer stays at the bottom */
+}
+
+.traffic_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 120vh;
+}
+
+.traffic_display {
+    width: 60%;
+    height: 60%;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.traffic_report {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    max-height: calc(100vh - 350px); /* Adjust as needed */
+    overflow-y: auto;
+}
+
+.region_select {
+    margin: 10px 5px;
+}
+
+.traffic_search {
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin: 10px 5px;
+    width: 250px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Add transition effect for box-shadow */
+}
+
+.traffic_search:hover,
+.traffic_search:focus {
+    border-color: #04AA6D;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.5); /* Add box-shadow on hover and focus */
+}
+
+.trafficTable_container {
+    overflow-x: auto;
+    margin-bottom: 50px;
+}
+
+.trafficTable{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.trafficTable thead {
+    background-color: #f2f2f2;
+}
+
+.trafficTable th, td {
+    padding: 16px;
+    text-align: left;
+    width: 33.33%; /* Adjust the width as needed */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    border: 1px solid #ddd; /* Add border for cells */
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}

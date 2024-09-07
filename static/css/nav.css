@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Add this CSS to your existing styles */
+.topnav.responsive a:not(.icon) {
+    display: block;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Change to fixed position */
+    top: 0; /* Position at the top */
+    left: 0; /* Ensure it starts from the left edge */
+    right: 0; /* Ensure it ends at the right edge */
+    width: 100%; /* Occupy full width */
+}
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: inline-block; /* Display as block elements */
+}
+
+.topnav a.nav-hotel-link {
+    float: right; /* Float the icons to the right */
+    padding: 14px 20px; /* Adjust padding for icons */
+}
+
+.topnav a.nav-lock-link {
+    float: right; /* Float the icons to the right */
+    padding: 14px 20px; /* Adjust padding for icons */
+}
+
+.topnav a.nav-link i {
+    font-size: 20px; /* Adjust icon size */
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}

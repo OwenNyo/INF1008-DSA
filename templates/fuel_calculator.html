@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus Fuel Calculator</title>
+</head>
+<body>
+    <h2>Bus Fuel Consumption Calculator</h2>
+    <form method="post">
+        <label for="distance">Travel Distance in km:</label><br>
+        <input type="text" id="distance" name="distance"><br><br>
+
+        <label for="bus_type">Select Bus Type:</label><br>
+        <select name="bus_type" id="bus_type">
+            <option value="10_seater">10 Seater Bus</option>
+            <option value="20_seater">20 Seater Bus</option>
+            <option value="30_seater">30 Seater Bus</option>
+        </select><br><br>
+
+        <input type="submit" value="Calculate">
+    </form>
+    {% if result %}
+    <h3>Results</h3>
+    <p>Total Fuel Consumption: {{ result['fuel_consumed'] }} litres</p>
+    <p>Total Cost: ${{ result['total_cost'] }}</p>
+    {% endif %}
+</body>
+</html>
