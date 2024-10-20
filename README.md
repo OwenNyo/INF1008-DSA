@@ -1,40 +1,48 @@
-Follow the instructions below to start the Flask server.
+# 🚌 INF1008 - Bus Route Optimization & Booking Project
 
-1. Setting up the Environment  <br>
-   a. Create and Active a Virtual Environment with the command shown below for different operating systems. (Optional) <br>
-   Windows: python -m venv venv <br>
-   macOS/Linux: python3 -m venv venv
+## 🌍 Overview
+This project focuses on optimizing bus commuter routes from the airport to various hotels, aiming to minimize **time**, **cost**, and **distance**, while also reducing **CO2 emissions**. Additionally, users can **book bus appointments** and **sign themselves up** through the app. Future work will expand the features to further improve environmental and operational efficiencies.
 
-   b. Install Dependencies by running the following command shown below to install the required packages <br>
-   pip install -r requirements.txt
+## 🎯 Project Goals
+- **Route Optimization**: Calculate the most efficient bus routes using advanced algorithms.
+- **Bus Appointment Booking**: Allow users to schedule bus rides directly through the app.
+- **Minimize Travel Time**: Ensure faster routes to reduce commute times.
+- **Reduce CO2 Emissions**: Optimize routes for minimal environmental impact.
+- **User Sign-up**: Provide a system for users to register and manage their bookings.
 
-2. Configuring Environment Variables
-   Set the necessary environment variables with the following command shown below to run the Flask application. <br>
-   Windows: <br>
-   set FLASK_APP=app.py <br>
-   set FLASK_ENV=development
+## 🚀 Key Features
+- **Efficient Pathfinding**: Uses **Dijkstra's Algorithm** and **A\*** for finding the shortest and most cost-effective routes.
+- **Sorting Algorithms**: Manages and prioritizes routes based on time, cost, or CO2 emissions.
+- **Bus Appointment System**: Users can book bus rides from the airport to their hotel of choice.
+- **User Sign-up**: Users can create accounts and manage their travel bookings easily.
+- **CO2 Emission Tracking**: Calculate and minimize the carbon footprint for each route.
+- **Real-time Traffic Management**: Incorporate real-time traffic data for route optimization.
+- **Scalable for Future Work**: Designed for future enhancements like dynamic traffic updates and ride-sharing integration.
 
-   macOS/Linux: <br>
-   export FLASK_APP=app.py <br>
-   export FLASK_ENV=development
+## 🛠️ Core Technologies
+- **Dijkstra's Algorithm**: Used to find the shortest paths between the airport and various hotels.
+- **A\*** Algorithm: An advanced pathfinding technique to improve efficiency and accuracy in route selection.
+- **Sorting Algorithms**: Applied to prioritize and manage optimal routes based on criteria like time, cost, and emissions.
+- **User Management**: A system for user sign-up, login, and booking management.
 
-3. Running the Flask Application
-   Once the environment is set up and the dependencies are installed, you can run the Flask application with the following command shown below. <br>
-   flask run
+## 🛠️ Core Files
+- `app.py`: The main application to handle route optimization and user bookings.
+- `trafficFunctions.py`: Core algorithms (Dijkstra, A*, sorting) for route calculation.
+- `requirements.txt`: Lists dependencies needed to run the project.
+- `static/`: Holds static resources like images and styles.
+- `templates/`: Contains HTML templates for the web interface, including booking and sign-up forms.
 
-4. Accessing the Application <br>
-   By default, Flask runs on http://127.0.0.1:5000/. <br>
-   Open your web browser and navigate to this URL to access the web application.
+## 🚦 Future Enhancements
+- **Dynamic Traffic Data Integration**: Include real-time traffic updates for more accurate route planning.
+- **User Customization**: Let users choose between different optimization goals like fastest route or most eco-friendly route.
+- **Multi-modal Transport**: Expand the system to integrate multiple transport options (e.g., buses, ride-sharing, biking).
 
-6. Stopping the Flask Server <br>
-   To stop the Flask server, press Ctrl+C in the terminal where the server is running.
+## 🌱 Environmental Impact
+One of the core objectives of this project is to reduce **CO2 emissions** by optimizing routes that save time and improve fuel efficiency. The project will continue to evolve to make public transportation systems more environmentally sustainable.
 
-Troubleshooting Tips
-1. Issue 'flask: command not found' <br>
-   Solution: Ensure that the virtual environment is activated and Flask is installed. <br>
-   You might need to add the virtual environment's Scripts (Windows) or bin (macOS/Linux) directory to your defined PATH.
+## 🤝 Contributing
+Contributions are welcome! Fork the repository, develop new features or optimizations, and submit a pull request.
 
-2. Issue: Application not loading <br>
-   Solution: Check if the FLASK_APP environment variable is correctly set to the entry point of your application (e.g., app.py). <br>
-   Check that all dependencies are installed.
+---
 
+🌍 **Optimize routes, book your bus, reduce costs, and help save the planet with more efficient public transport solutions!**
